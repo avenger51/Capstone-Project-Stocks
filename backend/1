@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS stocks;
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    phone VARCHAR(20)
+);
+
+
+CREATE TABLE stocks (
+    stock_id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(user_id),
+    ticker_symbol VARCHAR(10),
+    number_of_stocks INT,
+    value DECIMAL(10, 2),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

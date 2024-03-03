@@ -1,0 +1,35 @@
+.navbar {
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-link, .btn-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: lightblue;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover, .btn-link:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .btn-link {
+    background: none;
+    color: lightblue;
+    padding: 0;
+    border: none;
+  }
+  
